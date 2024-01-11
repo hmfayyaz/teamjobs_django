@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "python.formatting.provider": "none",
+    "python.envFile": "${workspaceFolder}/.venv",
+    "python.testing.pytestEnabled": true,
+    "black-formatter.importStrategy": "fromEnvironment",
+}

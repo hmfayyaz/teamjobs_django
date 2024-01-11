@@ -1,0 +1,44 @@
+[MAIN]
+ignore-paths=^.*/migrations/.*py$,.venv,.git,.hypothesis,.mypy_cache,.pytest_cache,.tox
+ignored-modules=
+jobs=1
+load-plugins=pylint_django
+persistent=yes
+py-version=3.11
+recursive=yes
+suggestion-mode=yes
+
+[DESIGN]
+max-parents=13
+min-public-methods=0
+
+[DJANGO FOREIGN KEYS REFERENCED BY STRINGS]
+django-settings-module=teamjobsbackend.settings
+
+[FORMAT]
+max-line-length=88
+
+[MESSAGES CONTROL]
+disable=long-suffix,
+        old-ne-operator,
+        old-octal-literal,
+        non-ascii-bytes-literal,
+        raw-checker-failed,
+        bad-inline-option,
+        locally-disabled,
+        file-ignored,
+        suppressed-message,
+        useless-suppression,
+        deprecated-pragma,
+        use-symbolic-message-instead,
+        eq-without-hash,
+        missing-module-docstring,
+        missing-class-docstring,
+        missing-function-docstring,
+        W,
+        invalid-name,
+        duplicate-code
+
+
+[TYPECHECK]
+generated-members=REQUEST,acl_users,aq_parent,[a-zA-Z]+_set{1,2},save,delete

@@ -1,0 +1,20 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"donjayamanne.python-extension-pack",
+		"github.remotehub",
+		"github.vscode-pull-request-github",
+		"hbenl.vscode-test-explorer",
+		"littlefoxteam.vscode-python-test-adapter",
+		"ms-python.black-formatter",
+		"ms-python.isort",
+		"njqdev.vscode-python-typehint",
+		"zeshuaro.vscode-python-poetry",
+		"dotenv.dotenv-vscode",
+		"ms-vscode-remote.remote-containers",
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": []
+}

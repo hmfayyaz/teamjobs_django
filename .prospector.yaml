@@ -1,0 +1,24 @@
+ignore-paths:
+  - ".venv"
+  - ".hypothesis"
+  - ".mypy_cache"
+  - ".pytest_cache"
+  - "htmlcov"
+  - "docker"
+  - "static"
+  - "media"
+
+ignore-patterns:
+  - (^|/)migrations(/|$)
+
+bandit:
+  run: true
+  config: bandit.yaml
+
+dodgy:
+  run: false
+
+mccabe:
+  run: true
+  options:
+    max-complexity: 10
